@@ -60,8 +60,8 @@ do
     fi
     if [ -e "$Name.log" ]; then
 	echo "      THERE IS ALREADY IN THE DIRECTORY THE OUTPUT $Name.log"
-	aux=`grep "Normal termination" $Name.log`
-	if [ -z "$Name.log" ]; then
+      	aux=`grep "Normal termination" $Name.log`
+	if [ -z $aux ]; then
 	    echo "       $Name.log ##ANORMAL## TERMINATION"
 	else
 	    echo "       $Name.log ##NORMAL## TERMINATION"
